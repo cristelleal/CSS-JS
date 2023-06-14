@@ -277,6 +277,18 @@ input:checked + label:after {
 
 label:active:after { width: 24px; }
 
+body.light .head:before,
+body.light section:before {
+  display: block;
+  position: fixed;
+  z-index: -10;
+  background: url(image.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body.light .head { 
   background-image: url(https://i.goopics.net/o8cgr8.png); 
   background-repeat: no-repeat;
