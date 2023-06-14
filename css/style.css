@@ -403,6 +403,9 @@ body.dark .btn-toggle {
 |
 --------------------------------------------------------------*/
 
+#section_desktop { display: none; }
+#section_mobile { display: block; }
+
 .img { margin: 2%;}
 
 .img img {
@@ -547,6 +550,9 @@ body.dark .btn-toggle {
   |
   ------------------------------------------------------------*/
 
+  #section_desktop { display: block; }
+  #section_mobile { display: none; }
+
   .header { 
     display: flex;
     align-items: center;
@@ -572,6 +578,4 @@ body.dark .btn-toggle {
   }
 
   .img p:nth-child(1) { text-align: left; }
-
-
 }
