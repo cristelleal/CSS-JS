@@ -286,11 +286,6 @@ body.light .head {
   -webkit-background-attachment: fixed;
 }
 
-body.light .head img {  
-  position: fixed;
-  z-index: -100;
-}
-
 body.light section { 
   background-image: url(https://i.goopics.net/inr7gr.png);
   background-repeat: no-repeat;

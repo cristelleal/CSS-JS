@@ -14,6 +14,12 @@ const switchInput = document.getElementById('switch');
         }
     });
 
+window.addEventListener('scroll', function() {
+  const scrolledY = window.scrollY;
+  const container = document.getElementById('body.light .head');
+  container.style.backgroundPosition = 'left ' + scrolledY + 'px';
+});
+
 const enhance = (id) => {
 
     const element = document.getElementById(id);
