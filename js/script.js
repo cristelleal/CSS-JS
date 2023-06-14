@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
   firstPartOfProjects.forEach(element => {
     const topElementToTopViewport = element.getBoundingClientRect().top;
 
-    if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.40) {
+    if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.60) {
       element.classList.add('active');
     } else {
       element.classList.remove('active');
@@ -69,7 +69,7 @@ window.addEventListener('scroll', () => {
   secondPartOfProjects.forEach(element => {
     const topElementToTopViewport = element.getBoundingClientRect().top;
 
-    if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.40) {
+    if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.60) {
       element.classList.add('active');
     } else {
       element.classList.remove('active');
