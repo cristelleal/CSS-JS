@@ -295,6 +295,11 @@ body.light section {
   -webkit-background-attachment: fixed;
 } 
 
+body.light section,
+body.light .head {
+  background-attachment: initial;
+}
+
 body.light .word { color: var(--ca-color-n-000); }
 
 body.light .fancy { 
@@ -558,8 +563,12 @@ body.dark .btn-toggle {
   body.light section { 
     background-size: 20rem;
     background-position: right;
-    background-attachment: fixed;
   } 
+
+  body.light section,
+  body.light .head {
+    background-attachment: fixed;
+  }
 
   /*------------------------------------------------------------
   |
