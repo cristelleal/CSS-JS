@@ -560,11 +560,6 @@ body.dark .btn-toggle {
     background-position: right;
   } 
 
-  body.light section,
-  body.light .head {
-    background-attachment: fixed;
-  }
-
   /*------------------------------------------------------------
   |
   |  - SECTION
