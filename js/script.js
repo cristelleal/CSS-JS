@@ -14,11 +14,14 @@ const switchInput = document.getElementById('switch');
         }
     });
 
-// window.addEventListener('scroll', function() {
-//   const scrolledY = window.scrollY;
-//   const head = document.getElementById('.head');
-//   head.style.backgroundPosition = 'left ' + scrolledY + 'px';
-// });
+window.addEventListener('scroll', function() {
+  const scrolledY = window.scrollY;
+  const firstPatternBackground = document.querySelector('.head');
+  const secondPatternBackground = document.querySelector('.pattern');
+  firstPatternBackground.style.backgroundPosition = 'right ' + scrolledY + 'px';
+  secondPatternBackground.style.backgroundPosition = 'right ' + scrolledY + 'px';
+});
+
 
 const enhance = (id) => {
 
