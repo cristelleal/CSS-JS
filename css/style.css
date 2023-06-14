@@ -211,18 +211,6 @@ svg {
     height: 100vh;
 }
 
-.header { background-image: url(https://i.goopics.net/hpbxc9.png); }
-
-#blob {
-    position: absolute;
-    z-index: 1;
-}
-
-.header .text {
-    position: relative;
-    z-index: 2;
-}
-
 #name {
   transform: translateX(-1.5%);
   opacity: 0;
@@ -288,6 +276,22 @@ input:checked + label:after {
 }
 
 label:active:after { width: 24px; }
+
+body.light .head { 
+  background-image: url(https://i.goopics.net/o8cgr8.png); 
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+body.light section { 
+  background-image: url(https://i.goopics.net/inr7gr.png);
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  background-position: right;
+  background-attachment: fixed;
+} 
 
 body.light .word { color: var(--ca-color-n-000); }
 
@@ -543,6 +547,17 @@ body.dark .btn-toggle {
   ------------------------------------------------------------*/
 
   .header { font-size: 4rem; }
+
+  body.light .head { 
+    background-size: 9rem;
+    background-position: 67%;
+  }
+  
+  body.light section { 
+    background-size: 20rem;
+    background-position: right;
+    background-attachment: fixed;
+  } 
 
   /*------------------------------------------------------------
   |
