@@ -1,7 +1,7 @@
 window.onload = () => {
 
 const switchInput = document.getElementById('switch');
-      
+
     switchInput.addEventListener('change', () => {
         const body = document.body;
       
@@ -40,24 +40,42 @@ const enhance = (id) => {
 
 enhance("media-link");
 
-// GSAP LIBRARY
+const slideText = document.getElementById('name');
+const slideWork = document.getElementById('work');
+slideText.classList.add('active');
+slideWork.classList.add('active');
 
-gsap.set(".photo:not(:first-child)", {opacity:0, scale:0.5})
+const firstPartOfProjects = document.querySelectorAll('.bloc-one');
 
-const animation = gsap.to(".photo:not(:first-child)", {
-	opacity:1, scale:1, duration:1, stagger:1
-})
+window.addEventListener('scroll', () => {
+  const {scrollTop, clientHeight} = document.documentElement;
 
-ScrollTrigger.create({
-	trigger:".gallery",
-	start:"top top",
-	end:"bottom bottom",
-	pin:".right",
-	animation: animation,
-	scrub:true,
-	markers:true
-})
+  firstPartOfProjects.forEach(element => {
+    const topElementToTopViewport = element.getBoundingClientRect().top;
 
+    if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.40) {
+      element.classList.add('active');
+    } else {
+      element.classList.remove('active');
+    }
+  });
+});
 
-  
+const secondPartOfProjects = document.querySelectorAll('.bloc-two');
+
+window.addEventListener('scroll', () => {
+  const {scrollTop, clientHeight} = document.documentElement;
+
+  secondPartOfProjects.forEach(element => {
+    const topElementToTopViewport = element.getBoundingClientRect().top;
+
+    if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.40) {
+      element.classList.add('active');
+    } else {
+      element.classList.remove('active');
+    }
+  });
+});
 }
+
+
